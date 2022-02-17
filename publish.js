@@ -22,7 +22,7 @@ module.exports = async ({github, context, core}) => {
         SecretId: COS_SECRET_ID,
         SecretKey: COS_SECRET_KEY,
     });
-    if (context && context.payload.head_commit.message.stratWith('NO')) {
+    if (context && context.payload.head_commit.message.stratsWith('NO')) {
         console.log('任务被主动终止');
         return;
     }

@@ -20,6 +20,7 @@
   "dependencies": {
     "axios": "^0.26.0",
     "cos-nodejs-sdk-v5": "^2.11.6",
-    "octokit": "^1.7.1"
+    "octokit": "^1.7.1",
+    "tencentcloud-sdk-nodejs": "^4.0.284"
   }
 }

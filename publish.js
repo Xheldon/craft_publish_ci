@@ -1,7 +1,6 @@
 const COS = require('cos-nodejs-sdk-v5');
 const tencentcloud = require('tencentcloud-sdk-nodejs');
 const fs = require('fs');
-const utils = require('./utils');;
 const axios = require('axios');
 const {Octokit} = require('octokit');
 

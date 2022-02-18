@@ -155,7 +155,7 @@ module.exports = async ({github, context, core}) => {
                                             console.log('~~~~~~~~~~~~~~~~~更新似乎成功了');
                                         }
                                     }).catch(err => {
-                                        console.log(`~~~~~~~~~~~~~~~~~更新 x_blog_src 文件${path}失败:`, err);
+                                        console.log(`~~~~~~~~~~~~~~~~~更新/新建 x_blog_src 文件${path}失败:`, err)
                                     });
                                 }
                             });

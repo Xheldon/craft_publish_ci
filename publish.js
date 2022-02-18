@@ -127,7 +127,7 @@ module.exports = async ({github, context, core}) => {
                                     console.log('====================即将更新文档内容：\n', content);
                                     const octokit = new Octokit({auth: GIT_HUB_TOKEN});
                                     const owner = GIT_HUB_OWNER;
-                                    const repo = GTI_HUB_REPO;
+                                    const repo = GIT_HUB_REPO;
                                     const branch = GIT_HUB_BRANCH;
                                     const git_message = context && context.payload.head_commit.message || 'NO';
                                     const path = content.match(/^path: (.*)$/m)[1].trim();

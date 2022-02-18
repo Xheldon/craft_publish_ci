@@ -136,8 +136,8 @@ module.exports = async ({github, context, core}) => {
                                     if (shaMatch) {
                                         sha = shaMatch[1].trim();
                                     }
-                                    // Note: 如果是更新（即文件已经存在，则会存在 sha）
-                                    octokit.rest.repos.createOrUpdateFileContents({
+                                    console.log('sha:', sha, shaMatch);
+                                    const config = {
                                         owner,
                                         repo,
                                         branch,
@@ -145,7 +145,10 @@ module.exports = async ({github, context, core}) => {
                                         message: git_message,
                                         ...(sha ? {sha} : {}),
                                         content: (new Buffer.from(content)).toString('base64'),
-                                    }).then(data => {
+                                    };
+                                    console.log('config:', config);
+                                    // Note: 如果是更新（即文件已经存在，则会存在 sha）
+                                    octokit.rest.repos.createOrUpdateFileContents(config).then(data => {
                                         if ([200, 201].includes(data.status)) {
                                             console.log('~~~~~~~~~~~~~~~~~更新成功:', data);
                                         } else {
@@ -161,10 +164,18 @@ module.exports = async ({github, context, core}) => {
                     .catch(err => {
                         console.log('获取远端图片列表失败:', err);
                     });
+                } else {
+                    console.log('-----------------无需上传文件-----------------');
                 }
                 if (deleteList.length > 0) {
                     console.log('-----------------删除文件-----------------');
                     console.log('------删除远端图片列表------:', deleteList);
+                    deleteList.forEach(imgPath => {
+                        // TODO: 删除远端图片
+                        console.log('------删除文件地址:', imgPath);
+                    });
+                } else {
+                    console.log('-----------------无需删除文件-----------------');
                 }
             }
         });

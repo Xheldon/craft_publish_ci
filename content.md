@@ -4,6 +4,8 @@ date: 2021-12-22 00:32:10 +0800
 path: test/aaa.md
 cos: test
 title: Craft 图片
+sha: cb277a11a55a6f60ff7b366f3e8d362e50bdaed1
+lastUpdateTime: 2022-02-18 17:33:44 +0800
 ---
 
 
@@ -26,3 +28,6 @@ title: Craft 图片
 
 不服也不行啊！
 
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/74363326-27d3-4061-b2b2-8a0674ec580b/6B41BDCA-FEF5-404E-B03A-65A2AF21BECD_2/xQPhnuAzv0rxPrxuPdt2FnQEmAqlAwTD0uHCRgzyFmwz/Image.png)
+
+上面是个新的图片哦~

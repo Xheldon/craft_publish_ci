@@ -15,7 +15,7 @@ module.exports = async ({github, context, core}) => {
         COS_REGION,
         GIT_HUB_TOKEN, // Github 的 Secrets 开头不能以 GITHUB 开头
         GIT_HUB_BRANCH,
-        GTI_HUB_REPO,
+        GIT_HUB_REPO,
         GIT_HUB_OWNER,
     } = process.env;
     const cos = new COS({

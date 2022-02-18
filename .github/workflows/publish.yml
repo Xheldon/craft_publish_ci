@@ -33,9 +33,9 @@ jobs:
           COS_BUCKET: ${{secrets.COS_BUCKET}}
           COS_REGION: ${{secrets.COS_REGION}}
           GIT_HUB_TOKEN: ${{secrets.GIT_HUB_TOKEN}}
-          GIT_HUB_BRANCH: ${{secrets.GIT_HUB.BRANCH}}
-          GIT_HUB_REPO: ${{secrets.GIT_HUB.REPO}}
-          GIT_HUB_OWNER: ${{secrets.GIT_HUB.REPO}}
+          GIT_HUB_BRANCH: ${{secrets.GIT_HUB_BRANCH}}
+          GIT_HUB_REPO: ${{secrets.GIT_HUB_REPO}}
+          GIT_HUB_OWNER: ${{secrets.GIT_HUB_OWNER}}
         with:
           script: |
             const script = require('./publish.js')

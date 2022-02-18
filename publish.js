@@ -106,9 +106,9 @@ module.exports = async ({github, context, core}) => {
                         });
                     })).then(resImgBufs => {
                         // Note: resImgBufs 就是从 res.craft.do 中拉取的图片的 buffer
+                        let count = 0;
                         resImgBufs.forEach((img, key) => {
                             console.log('------Key:', docImgUrlKeyMap.find(imgEntry => imgEntry.url === img.url).name);
-                            let count = 0;
                             cos.putObject({
                                 Bucket: COS_BUCKET,
                                 Region: COS_REGION,

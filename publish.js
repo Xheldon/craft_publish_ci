@@ -1,9 +1,8 @@
 const COS = require('cos-nodejs-sdk-v5');
-const tencentcloud = require('tencentcloud-sdk-nodejs');
 const fs = require('fs');
 const axios = require('axios');
 const {Octokit} = require('octokit');
-const {pushToGithub} = require('./utils');
+const {pushToGithub, purgeUrlCache} = require('./utils');
 
 module.exports = async ({github, context, core}) => {
     const {
@@ -110,8 +109,7 @@ module.exports = async ({github, context, core}) => {
                                         console.log('!!!!!!上传图片错误:', err.statusCode, err, img.url);
                                         return;
                                     }
-                                    console.log(`------上传成功: ${key}`);
-                                    count++;
+                                    console.log(`---上传成功${count++}: ${key}`);
                                     // Note: 上传成功后需要写入 content.md 中，然后传到 GitHub x_blog_src 中
                                     content = content.replace(`](${img.url})`, `](https://static.xheldon.cn/${key})`);
                                     if (count === resImgs.length) {
@@ -120,6 +118,11 @@ module.exports = async ({github, context, core}) => {
                                             context,
                                             content,
                                         });
+                                        console.log('====================即将刷新 「上传新文件」的 CDN 缓存====================');
+                                        // Note: 刷新 cdn
+                                        purgeUrlCache(resImgs.map(img => {
+                                            return docImgUrlKeyMap.find(imgEntry => imgEntry.url === img.url).name
+                                        }).filter(Boolean));
                                     }
                                 });
                             });
@@ -128,8 +131,15 @@ module.exports = async ({github, context, core}) => {
                             console.log('!!!!!!获取 Craft 图片列表失败:', err);
                         });
                     } else {
-                        console.log('------无需上传文件，替换页面中的图片链接即可');
-                        // TODO: 替换页面中的图片链接
+                        console.log('---无需上传文件，替换页面中的图片链接即可');
+                        docImgUrlKeyMap.forEach(map => {
+                            content = content.replace(`(${map.url})`, `(https://static.xheldon.cn/${map.name})`);
+                        });
+                        console.log('---替换完成，即将更新文档内容到博客仓库');
+                        pushToGithub({
+                            context,
+                            content,
+                        });
                     }
                     // Note: 找出远端有，本地无的文件，删除之
                     const deleteList = [];
@@ -139,6 +149,7 @@ module.exports = async ({github, context, core}) => {
                         }
                     });
                     if (deleteList.length) {
+                        const count = 0;
                         console.log(`---获取需要删除 ${cosPath} 目录下的文件列表:`, deleteList);
                         cos.deleteMultipleObject({
                             Bucket: COS_BUCKET,
@@ -149,10 +160,14 @@ module.exports = async ({github, context, core}) => {
                                 console.log(`!!!!!!删除 ${cosPath} 目录下的文件是发生错误:`, err);
                                 return;
                             }
-                            console.log(`!!!!!!删除 ${data.Deleted.Key} 成功`);
-                            // TODO: 刷新 CDN 缓存
+                            count++;
+                            console.log(`---删除 ${data.Deleted.Key} 成功`);
                             if (data.Error && Array.isArray(data.Error) && data.Error.length) {
                                 console.log(`!!!!!!删除 ${data.Error.Key} 失败，状态码:${data.Error.Code}，信息:${data.Error.Message}`);
+                            }
+                            if (count === deleteList.length) {
+                                console.log('====================即将刷新 「删除旧文件」的 CDN 缓存====================');
+                                purgeUrlCache(deleteList);
                             }
                         });
                     }

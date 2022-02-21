@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2022-02-21 14:38:10 +0800
-path: _posts/tech/2022/2022-test-image-upload-to-tencent-cos.md
+path: _posts/tech/2022/2022-02-21-test-image-upload-to-tencent-cos.md
 cos: 2022/test-image-upload-to-tencent-cos
 categories: tech
 header-style: text

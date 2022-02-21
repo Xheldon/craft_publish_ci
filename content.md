@@ -2,7 +2,7 @@
 layout: post
 date: 2022-02-21 14:38:10 +0800
 path: _post/tech/2022/2022-test-image-upload-to-tencent-cos.md
-cos: img/in-post/2022/test-image-upload-to-tencent-cos
+cos: 2022/test-image-upload-to-tencent-cos
 categories: tech
 header-style: text
 callout: 本文章用来测试图片同步逻辑，没有任何实质意义。

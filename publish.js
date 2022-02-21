@@ -4,16 +4,12 @@ const axios = require('axios');
 const {Octokit} = require('octokit');
 const {pushToGithub, purgeUrlCache} = require('./utils');
 
-module.exports = async ({github, context, core}) => {
+module.exports = async ({context}) => {
     const {
         COS_SECRET_ID,
         COS_SECRET_KEY,
         COS_BUCKET,
         COS_REGION,
-        GIT_HUB_TOKEN,
-        GIT_HUB_BRANCH,
-        GIT_HUB_REPO,
-        GIT_HUB_OWNER,
     } = process.env;
     const cos = new COS({
         SecretId: COS_SECRET_ID,

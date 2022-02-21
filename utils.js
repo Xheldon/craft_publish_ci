@@ -39,6 +39,10 @@ exports.pushToGithub = ({
 }
 
 exports.purgeUrlCache = (url) => {
+    const {
+        COS_SECRET_ID,
+        COS_SECRET_KEY,
+    } = process.env;
     const CdnClient = tencentcloud.cdn.v20180606.Client;
     const clientConfig = {
         credential: {

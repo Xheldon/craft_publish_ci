@@ -10,8 +10,10 @@ tags:
 path: _posts/tech/2021/2021-12-09-use-craft-extension-to-write-blog.md
 title: 本文通过 Craft Extension 发送
 sha: 8f2ca54c76f7dd13016056423a6cc28761687e1a
-lastUpdateTime: 2022-02-28 12:42:11 +0800
+lastUpdateTime: 2022-02-28 12:51:48 +0800
 ---
+
+> 本文所述的一些流程方案已经废弃，新的流程逻辑在这里：[https://www.xheldon.com/tech/my-blog-ci-in-2022.html](https://www.xheldon.com/tech/my-blog-ci-in-2022.html)
 
 花了两天时间，简单搞定了在 Craft 写内容，然后通过自己写的插件将内容同步到 Github 仓库，然后 Github 仓库自动 build 出 Github Pages 的过程。
 

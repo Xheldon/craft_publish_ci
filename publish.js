@@ -27,7 +27,10 @@ module.exports = async ({context}) => {
         let cosPath = content.match(/^cos\:(.*)/m);
         if (!cosPath || !cosPath[1].trim()) {
             console.log('---cosPath 不存在，本文没有图片，直接上传文章');
-            pushToGithub(content);
+            pushToGithub({
+                context,
+                content
+            });
             return;
         } else {
             let docImgUrlList = [...(content.matchAll(/^!\[.*]\((.*)\)$/mg))].map((imgEntry) => imgEntry[1]);

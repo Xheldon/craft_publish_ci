@@ -24,8 +24,8 @@ module.exports = async ({context}) => {
         encoding: 'utf-8',
     });
     if (content) {
-        let cosPath = content.match(/^cos\:(.*)/m)[1].trim() + '/';
-        if (!cosPath) {
+        let cosPath = content.match(/^cos\:(.*)/m);
+        if (!cosPath || !cosPath[1].trim()) {
             console.log('---cosPath 不存在，本文没有图片，直接上传文章');
             pushToGithub(content);
             return;

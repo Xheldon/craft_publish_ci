@@ -99,9 +99,9 @@ module.exports = async ({context}) => {
                             if (res.status === 200) {
                                 console.log(`---获取第 ${k + 1} 个远端图片列表成功：${imgUrl.url}`);
                                 // Note: 上面没有加图片后缀，所以这里要加上
-                                const suffix = res.headers['content-type'];
-                                if (suffix) {
-                                    const arr = suffix.split('/');
+                                const contnetType = res.headers['content-type'];
+                                if (contnetType) {
+                                    const arr = contnetType.split('/');
                                     let suffix = arr[arr.length - 1];
                                     console.log(`---获取第 ${k + 1} 个远端图片格式成功：${suffix}`);
                                     return {

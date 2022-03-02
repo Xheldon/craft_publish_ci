@@ -4,6 +4,7 @@ const tencentcloud = require('tencentcloud-sdk-nodejs');
 exports.pushToGithub = ({
     context,
     content,
+    debug,
 }) => {
     const {
         GIT_HUB_TOKEN,
@@ -11,6 +12,10 @@ exports.pushToGithub = ({
         GIT_HUB_REPO,
         GIT_HUB_OWNER,
     } = process.env;
+    if (debug) {
+        console.log('---上传到 Github 的内容:', content);
+        return;
+    }
     const octokit = new Octokit({auth: GIT_HUB_TOKEN});
     const owner = GIT_HUB_OWNER;
     const repo = GIT_HUB_REPO;

@@ -44,6 +44,11 @@ module.exports = async ({context}) => {
             cosPath = cosPath[1].trim();
             let docImgUrlList = [...(content.matchAll(/^!\[.*]\((.*)\)$/mg))].map((imgEntry) => imgEntry[1]);
             let docImgUrlKeyMap = [];
+            // Note: header-image 也需要 push 一下
+            let headerImg = content.match(/^header-img\:(.*)/m);
+            if (headerImg && headerImg[1]) {
+                docImgUrlList.push(headerImg[1].trim());
+            }
             let docImgsPath = docImgUrlList.map((docImgUrl) => {
                 // Note: 不带 . （没有后缀名）的图片是 Web 端上传的，Mac 端上传的图片带后缀，我们只处理带后缀的
                 //  详见我在官方论坛提的问题：https://forum.developer.craft.do/t/what-the-image-unique-id/371
@@ -52,9 +57,9 @@ module.exports = async ({context}) => {
                 // Note: 所有图片，都转换成 jpg，免得麻烦
                 let name = '';
                 if (arr.length > 4) {
-                    name = `img/in-post/${cosPath}/${arr[6]}.jpeg}`;
+                    name = `img/in-post/${cosPath}/${arr[6]}.jpeg`;
                 } else {
-                    name = `img/in-post/${cosPath}/${arr[1]}.jpeg}`;
+                    name = `img/in-post/${cosPath}/${arr[1]}.jpeg`;
                 }
                 docImgUrlKeyMap.push({
                     name,

@@ -94,7 +94,7 @@ module.exports = async ({context}) => {
                         // 先拉取远端的来自 res.craft.do 的图片，放到 Promise 中，都 resolve 后，再批量上传
                         const resImgs = docImgUrlKeyMap.filter(img => uploadList.includes(img.name));
                         console.log('====================即将获取远端 Craft 图片====================');
-                        Promise.all(resImgs.map(({imgUrl}, k) => {
+                        Promise.all(resImgs.map((imgUrl, k) => {
                             return axios({
                                 method: 'get',
                                 url: imgUrl.url,

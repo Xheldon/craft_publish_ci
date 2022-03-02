@@ -39,6 +39,7 @@ module.exports = async ({context}) => {
             });
             return;
         } else {
+            cosPath = cosPath[1].trim();
             let docImgUrlList = [...(content.matchAll(/^!\[.*]\((.*)\)$/mg))].map((imgEntry) => imgEntry[1]);
             let docImgUrlKeyMap = [];
             // Note: header-image 也需要 push 一下

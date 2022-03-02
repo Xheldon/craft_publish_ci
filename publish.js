@@ -200,7 +200,7 @@ module.exports = async ({context}) => {
                         cos.deleteMultipleObject({
                             Bucket: COS_BUCKET,
                             Region: COS_REGION,
-                            Objects: deleteList
+                            Objects: deleteList.map(name => ({Key: name})),
                         }, (err, data) => {
                             if (err) {
                                 console.log(`!!!!!!删除 ${cosPath} 目录下的文件是发生错误:`, err);

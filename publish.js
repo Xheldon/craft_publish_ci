@@ -108,7 +108,7 @@ module.exports = async ({context}) => {
                                     return {
                                         buffer: res.data,
                                         url: imgUrl.url,
-                                        name: `${imgUrl.name}_.${suffix}`,
+                                        name: `${imgUrl.name}_${suffix}`,
                                     };
                                 }
                             }
@@ -162,66 +162,53 @@ module.exports = async ({context}) => {
                         } else {
                             if (debug) {
                                 console.log('---debug 模式，跳过图片上传，替换页面中的图片链接即可');
-                                resImgs.forEach(map => {
-                                    content = content.replace(`${map.url}`, `https://static.xheldon.cn/${map.name}`);
-                                });
-                                console.log('---替换完成，即将更新文档内容到博客仓库');
-                                pushToGithub({
-                                    context,
-                                    content,
-                                    debug,
-                                });
                             } else {
                                 console.log('---无需上传文件，替换页面中的图片链接即可');
-                                resImgs.forEach(map => {
-                                    content = content.replace(`${map.url}`, `https://static.xheldon.cn/${map.name}`);
-                                });
-                                console.log('---替换完成，即将更新文档内容到博客仓库');
-                                pushToGithub({
-                                    context,
-                                    content,
-                                    debug,
-                                });
                             }
+                            resImgs.forEach(map => {
+                                content = content.replace(`${map.url}`, `https://static.xheldon.cn/${map.name}`);
+                            });
+                            console.log('---替换完成，即将更新文档内容到博客仓库');
+                            pushToGithub({
+                                context,
+                                content,
+                                debug,
+                            });
+                        }
+                        // Note: 找出远端有，本地无的文件，删除之
+                        const deleteList = [];
+                        cosImgsPath.forEach(cosImgPath => {
+                            if (!resImgs.find(img => img.name === cosImgPath)) {
+                                deleteList.push(cosImgPath);
+                            }
+                        });
+                        if (deleteList.length) {
+                            const count = 0;
+                            console.log(`---获取需要删除 ${cosPath} 目录下的文件列表:`, deleteList);
+                            cos.deleteMultipleObject({
+                                Bucket: COS_BUCKET,
+                                Region: COS_REGION,
+                                Objects: deleteList
+                            }, (err, data) => {
+                                if (err) {
+                                    console.log(`!!!!!!删除 ${cosPath} 目录下的文件是发生错误:`, err);
+                                    return;
+                                }
+                                count++;
+                                console.log(`---删除 ${data.Deleted.Key} 成功`);
+                                if (data.Error && Array.isArray(data.Error) && data.Error.length) {
+                                    console.log(`!!!!!!删除 ${data.Error.Key} 失败，状态码:${data.Error.Code}，信息:${data.Error.Message}`);
+                                }
+                                if (count === deleteList.length) {
+                                    console.log('====================即将刷新 「删除旧文件」的 CDN 缓存====================');
+                                    purgeUrlCache(deleteList);
+                                }
+                            });
                         }
                     })
                     .catch(err => {
                         console.log('!!!!!!获取 Craft 图片列表失败:', err);
                     });
-
-                    
-
-
-                    // Note: 找出远端有，本地无的文件，删除之
-                    const deleteList = [];
-                    cosImgsPath.forEach(cosImgPath => {
-                        if (!docImgsPath.includes(cosImgPath && cosImgPath.trim())) {
-                            deleteList.push(cosImgPath);
-                        }
-                    });
-                    if (deleteList.length) {
-                        const count = 0;
-                        console.log(`---获取需要删除 ${cosPath} 目录下的文件列表:`, deleteList);
-                        cos.deleteMultipleObject({
-                            Bucket: COS_BUCKET,
-                            Region: COS_REGION,
-                            Objects: deleteList
-                        }, (err, data) => {
-                            if (err) {
-                                console.log(`!!!!!!删除 ${cosPath} 目录下的文件是发生错误:`, err);
-                                return;
-                            }
-                            count++;
-                            console.log(`---删除 ${data.Deleted.Key} 成功`);
-                            if (data.Error && Array.isArray(data.Error) && data.Error.length) {
-                                console.log(`!!!!!!删除 ${data.Error.Key} 失败，状态码:${data.Error.Code}，信息:${data.Error.Message}`);
-                            }
-                            if (count === deleteList.length) {
-                                console.log('====================即将刷新 「删除旧文件」的 CDN 缓存====================');
-                                purgeUrlCache(deleteList);
-                            }
-                        });
-                    }
                 }
             });
         }

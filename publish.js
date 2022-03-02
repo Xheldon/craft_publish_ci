@@ -191,7 +191,7 @@ module.exports = async ({context}) => {
                         }
                     });
                     if (deleteList.length) {
-                        const count = 0;
+                        let count = 0;
                         console.log(`---获取需要删除 ${cosPath} 目录下的文件列表:`, deleteList);
                         if (debug) {
                             console.log('调试模式，获取即将删除的图片内容:', deleteList);

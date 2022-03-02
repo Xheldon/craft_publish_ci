@@ -9,8 +9,8 @@ tags:
     - 插件
 path: _posts/tech/2021/2021-12-09-use-craft-extension-to-write-blog.md
 title: 本文通过 Craft Extension 发送
-sha: 8f2ca54c76f7dd13016056423a6cc28761687e1a
-lastUpdateTime: 2022-02-28 12:51:48 +0800
+sha: 5c6ed4af9a8830764bf384264cea4a0f10eb4b2c
+lastUpdateTime: 2022-02-28 14:24:21 +0800
 ---
 
 > 本文所述的一些流程方案已经废弃，新的流程逻辑在这里：[https://www.xheldon.com/tech/my-blog-ci-in-2022.html](https://www.xheldon.com/tech/my-blog-ci-in-2022.html)

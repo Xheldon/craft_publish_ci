@@ -100,11 +100,11 @@ module.exports = async ({context}) => {
                             if (res.status === 200) {
                                 console.log(`---获取第 ${k + 1} 个远端图片列表成功：${imgUrl.url}, headers:`, JSON.stringify(res.headers));
                                 // Note: 上面没有加图片后缀，所以这里要加上
-                                const contnetType = res.headers['content-type'];
-                                if (contnetType) {
-                                    const arr = contnetType.split('/');
-                                    let suffix = arr[arr.length - 1];
-                                    console.log(`---获取第 ${k + 1} 个远端图片格式成功：${suffix}`);
+                                // const contnetType = res.headers['content-type'];
+                                // Note: 坑：从 content-type 不靠谱，因为有些图片是 application/octet-stream 的，因此此处使用魔法数字
+                                const suffix = getImageSuffix(res.data);
+                                console.log(`---获取第 ${k + 1} 个远端图片格式成功：${suffix}`);
+                                if (suffix) {
                                     return {
                                         buffer: res.data,
                                         url: imgUrl.url,
@@ -112,7 +112,7 @@ module.exports = async ({context}) => {
                                     };
                                 }
                             }
-                            throw new Error(`!!!!!!获取 Craft 第 ${k + 1} 个图片失败:\n ${imgUrl.url},\nheader:${JSON.stringify(res.headers)},\n name:${imgUrl.name}\n`);
+                            throw new Error(`!!!!!!获取 Craft 第 ${k + 1} 个图片失败:\n ${imgUrl.url},\nheader:${JSON.stringify(res.headers['contente-type'])},\n name:${imgUrl.name}\n`);
                         });
                     }).filter(Boolean)).then(resImgs => {
                         let count = 0;

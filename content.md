@@ -1,10 +1,9 @@
 ---
 layout: post
-date: 2022-02-27 23:10:35 +0800
+date: 2023-02-27 23:10:35 +0800
 categories: life
 path: _posts/life/2022/2022-02-27-time-to-talk-episode-2.md
 cos: 2022/time-to-talk-episode-2
-header-style: text
 tags:
     - 泡脚时间
     - 生活
@@ -48,4 +47,5 @@ header-img-credit-href: https://unsplash.com/@_miltiadis_?utm_source=xheldon_blo
 
 
 
-在，
+在测试完毕👆🏻
+

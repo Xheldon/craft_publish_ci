@@ -2,7 +2,7 @@ const COS = require('cos-nodejs-sdk-v5');
 const fs = require('fs');
 const axios = require('axios');
 const {Octokit} = require('octokit');
-const {pushToGithub, purgeUrlCache} = require('./utils');
+const {pushToGithub, purgeUrlCache, getImageSuffix} = require('./utils');
 
 module.exports = async ({context}) => {
     const {
@@ -98,7 +98,7 @@ module.exports = async ({context}) => {
                             responseType: 'arraybuffer',
                         }).then(res => {
                             if (res.status === 200) {
-                                console.log(`---获取第 ${k + 1} 个远端图片列表成功：${imgUrl.url}, headers:`, JSON.stringify(res.headers));
+                                console.log(`---获取第 ${k + 1} 个远端图片列表成功：${imgUrl.url}, headers:`, JSON.stringify(res.headers['content-type']));
                                 // Note: 上面没有加图片后缀，所以这里要加上
                                 // const contnetType = res.headers['content-type'];
                                 // Note: 坑：从 content-type 不靠谱，因为有些图片是 application/octet-stream 的，因此此处使用魔法数字

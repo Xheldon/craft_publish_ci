@@ -12,6 +12,7 @@ module.exports = async ({context}) => {
         COS_SECRET_KEY,
         COS_BUCKET,
         COS_REGION,
+        WECHAT_TOKEN, // Note: 随便一个字符，鉴权用，发送端和服务端需要保持一致
     } = process.env;
     const cos = new COS({
         SecretId: COS_SECRET_ID,
@@ -139,6 +140,7 @@ module.exports = async ({context}) => {
                                 return;
                             }
                             resImgs.forEach(img => {
+                                // Note: 上传到 cos
                                 cos.putObject({
                                     Bucket: COS_BUCKET,
                                     Region: COS_REGION,

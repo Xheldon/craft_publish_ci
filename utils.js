@@ -48,7 +48,7 @@ const sendImgToWechat = (thumbUrl) => {
                         }
                     }).then(({data}) => {
                         console.log('data:', data.data);
-                        return data.data.media_id;
+                        return data.data;
                     });
                 });
         }
@@ -135,14 +135,14 @@ const pushToGithub = ({
     const wechatConfig = {
         title,
         author,
-        content: modifyContent(realContent),
         content_source_url: webPath,
         need_open_comment: 1,
         only_fans_can_comment: 0,
     };
-    sendImgToWechat(thumbUrl).then(media_id => {
+    sendImgToWechat(thumbUrl).then(({media_id, url}) => {
         if (media_id) {
             console.log('上传图片素材成功:', media_id);
+            wechatConfig.content = modifyContent(realContent, url),
             wechatConfig.thumb_media_id = media_id;
         } else {
             console.log('上传图片素材错误:', media_id);
@@ -264,7 +264,7 @@ const addDraftToWechat = (article) => {
     });
 };
 
-const modifyContent = (html) => {
+const modifyContent = (html, url) => {
     const dom = new JSDOM(html);
     dom.window.document.querySelectorAll('h1, h2, h3, h4, h5, h6, h7, p').forEach(h => {
         const headingMap = {
@@ -284,7 +284,7 @@ const modifyContent = (html) => {
             h.remove();
         }
     });
-    return `<p><span style="color: #f04848; font-size: 18px;">本文仅为摘要，想获得更好的阅读体验请点击底部的「<b>阅读原文</b>」了解更多~</span></p> ${dom.window.document.body.innerHTML} <p>--->摘要结束<---</p>`;
+    return `<p><span style="color: #f04848; font-size: 18px;">本文仅为摘要，过滤了全部的图片内容，因此想获得更好的阅读体验请点击底部的「<b>阅读原文</b>」了解更多~</span></p> <p><img src="${url}" /></p>${dom.window.document.body.innerHTML} <p>--->摘要结束<---</p>`;
 };
 
 exports.wechatSignature = wechatSignature;

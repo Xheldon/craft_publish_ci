@@ -14,6 +14,8 @@ title: Apple TV 使用体验及相关问题
 header-img: https://images.unsplash.com/photo-1621685950846-9323d993bbf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDIyNzR8MHwxfHNlYXJjaHwxfHxhcHBsZSUyMHR2fGVufDB8fHx8MTY0NzQ4MzYxMw&ixlib=rb-1.2.1&q=80&w=1080
 header-img-credit: Omar Rodriguez / Unsplash
 header-img-credit-href: https://unsplash.com/@e90two?utm_source=xheldon_blog&utm_medium=referral
+sha: 974a706557c59cff295928506045ca4f5f1a2977
+lastUpdateTime: 2022-04-10 13:10:49 +0800
 ---
 
 ## 前言
@@ -257,6 +259,16 @@ infuse 首次使用时，登陆完 Emby 服务后，会进行一个扫库操作�
 ## 电视直播
 
 有些时候是有看直播的需求的，比如春节联欢晚会、冬奥会开幕式等，此时 Apple TV 就有明显的不足了，你可以淘宝购买一些直播源（如 IPTV 的），然后通过特定软件观看，但是终归不是正途，且这些直播源基本都是有时效性的，很快就会过期，这里不推荐。
+
+如果非要使用的话，可以使用 iPlayTV 这款软件，美区价格 5.99 美元，可以在 github 找一些播放源，如 [这里](https://github.com/imDazui/Tvlist-awesome-m3u-m3u8) ，直接添加地址即可，如下所示： 
+
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/6A4A200D-514D-40DA-BA6D-F301A0A9791A/94283D89-0867-4BE5-BE82-843DD9F2A6DF_2/OhTXz51UeqHc2igV6Yhet7xPolAyfPeBMwPpx6DkBH4z/SCR-20220410-hbp.png)
+
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/6A4A200D-514D-40DA-BA6D-F301A0A9791A/518E6DBA-D33A-4635-849A-5C8059C76C8B_2/KK66xxam5OQnkXkbCKYKrWeqOBcnnAglvUU6PGCg0IAz/SCR-20220410-hbe.png)
+
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/6A4A200D-514D-40DA-BA6D-F301A0A9791A/301C07D2-42EF-4D33-9E90-069805E3628B_2/QEKwNMcBN5lOxM5gLXYI31RBIUpuiXdcuMhbazd9ajQz/SCR-20220410-hb6.jpeg)
+
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/6A4A200D-514D-40DA-BA6D-F301A0A9791A/64F471F8-25D0-404E-9A0C-3F0D2B95B1A8_2/ypoKoKNUTdwI6jIQUXsOLLfpNCxUynad3Lrwo1VDr5cz/SCR-20220410-hck.jpeg)
 
 更推荐的方式是直接在安卓电视上安装软件，我在电视上安装的软件叫 「央视频」，偶尔看看 CCTV-1 的直播，找回一下小时候的感觉，还是不错的。
 

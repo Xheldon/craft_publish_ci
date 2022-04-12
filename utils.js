@@ -118,7 +118,7 @@ const pushToGithub = ({
     }
     const headerImgUrl = content.match(/^header\-img\:(.*)/m);
     const categories = content.match(/^categories\:(.*)/m)[1].trim();
-    const webPath = `https://www.xheldon.com/${categories}/${content.match(/^cos\:(.*)/m)[1].trim().split('/')[1]}.html`;
+    const webPath = `https://www.xheldon.cn/${categories}/${content.match(/^cos\:(.*)/m)[1].trim().split('/')[1]}.html`;
     console.log('webPath:', webPath);
     let thumbUrl = '';
     if (headerImgUrl && headerImgUrl[1] && headerImgUrl[1].trim()) {

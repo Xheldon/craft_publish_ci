@@ -37,19 +37,17 @@ header-img-credit-href: https://unsplash.com/@louishansel?utm_source=xheldon_blo
 
 豆角，掰掉两头的尖儿，然后顺势往下拉，把豆角丝儿给去掉： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/CB2097A5-8C87-4614-99EE-CCBD12FAB8FE_2/drqOHy1dvMacsviRd7mdXAjcR25kS1wI4YoxwikcQ6kz/IMG_7286.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/28175445-50CD-488F-80ED-F01B139DD3B5_2/HBsxtfhv3RHXJZOMNJd3qyPJcOnQKs43h97e0jnwxhAz/IMG_7286%20.jpeg)
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/1FDE2738-41A5-4B24-9354-C9B0A12CA438_2/YTSlqd8LncMKaPj3HdeVDHwNH11MaPi9srMdesYrdu4z/IMG_7287.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/1E302DB0-D199-423E-BF67-9F5410FD9F90_2/Kvp1D3RxpstU7VeEv64u2iqwfsvvNzPstkMBdUOo5Ccz/IMG_7287%20.jpeg)
 
 然后把豆角手动掰成 4~5 厘米的长度即可，然后用水冲洗干净放在一遍备用： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/F2AD9BE1-1CA4-4D53-AD74-483231CB1AC1_2/BY3u92fUIcqVJcXyJwe6Ox05Bvu32R3yCxDAx5usWvEz/IMG_7289.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/671FE42B-3523-4C48-891F-8E91FB1AF1B2_2/08YawuJmsCExjCoc9c2qRTG5bO6DMuomOOJECw7K0Ysz/IMG_7289%20.jpeg)
 
 五花肉切成块，大葱切碎，姜切片，西红柿切片： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/8B5E09F0-71C5-4354-A275-E2CF4DEA06F2_2/M38yM5Gl4kR5RJuei60hAiDWorq18SbGYvT8Afvyg7gz/IMG_7293.heic)
-
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/496EFC53-C373-41FF-AE1E-9016C81E5C2F_2/cH2c0dsfO5Novm6d1NNIyIuhPnsmZ2ZIOPRc5Bc6xzgz/IMG_7295.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/F4514241-9778-4098-A2A8-C1F867BED547_2/oDcmdeNG8XWO9SPjn8nAfMAV8Eac7Gh7OtsqD3hfqUEz/IMG_7294%20.jpeg)
 
 至此处理完毕。
 
@@ -57,75 +55,79 @@ header-img-credit-href: https://unsplash.com/@louishansel?utm_source=xheldon_blo
 
 把锅用水冲一遍，然后擦干： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/43C350E1-8E41-464D-980B-3125FD2EF234_2/CKI4GCETDxxbqJ782Yuz4ktaHCBAqGtFMfgCUTlOXqsz/IMG_7296.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/4C1462B7-3ABB-4DD0-BED0-1FC223F6990E_2/q7sHxgCYVdhJf35Kbb4gcUG93YX8zR89b0wPN8msxJAz/IMG_7296%20.jpeg)
 
 然后大火把锅烧干，看不到水之后，放入适量油，所谓「适量」，差不多就是基本能盖住锅底即可： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/4EC5F1C9-92DC-4F1B-B754-909E32B58059_2/wiyCMawol2upFvHM3hPNsnlEO1oL4RoXa8a1BSw1JDgz/IMG_7298.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/8AD313F5-F2C9-4051-8073-964F191808A7_2/J77jScLbNHlGpr7Vy54rtmu2ypjiYWd79Up1xjp2Mg4z/IMG_7298%20.jpeg)
 
 放入葱、姜、花椒，炒一下香一香锅，然后放入肉。
 
 注意，刚放入肉的时候，肉会粘底，此时不要铲它，稍微等个几秒钟再铲，就可以轻松铲起来而不会粘底了（经验之谈）： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/880E27AD-42E5-4FC2-BE4E-03F30DF3E780_2/kdmp9VFTic8scRx1nEr4TOvdDHf2r4uksmnagTOJ46gz/IMG_7300.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/2545D3C9-8BAF-4FC5-9313-A62F69346298_2/3WAHr2SR73JDMyvWUCbezpPc4TrOVduGQxhg6tVwK4gz/IMG_7300%20.jpeg)
 
-此时可能火比较大，葱姜略糊了些，因此可以倒点料酒，顺便去去肉腥味，一举两得： 
+此时可能火比较大，葱姜略糊了些，因此可以倒点料酒，顺便去去肉腥味，一举两得：
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/FA24A059-D832-4412-8685-1ABDAA5C7B57_2/ZYyKywqdGmqIVkvLwoRFtyYggpmHDXQQZZJIlD1xD8Uz/IMG_7301.heic)
+ 
+
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/B08B1090-E4DC-4BD1-ADE4-746B8E42A268_2/qJyZOLohRml1W0MuYJ6t48RVUwSCnz855QaIVWNdfmUz/IMG_7301%20.jpeg)
 
 翻炒均匀，肉炒白以后，倒入生抽提味： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/7B959FF2-01DD-411E-BEF0-D6C8D24910AC_2/DP5DgSBLbMPI0m4fJe9nly75oTcroK9j2Foiu488ARgz/IMG_7302.heic)
+翻炒均匀，炒半分钟左右后，放入西红柿，目的是提鲜：
 
-翻炒均匀，炒半分钟左右后，放入西红柿，目的是提鲜： 
+ 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/0B95C764-C36E-4363-93D8-2D307013B2B7_2/3DFjFb6SzMPkapKgY3owL7xycvoYuyLxxAaPmWfprmgz/IMG_7303.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/2BBBAD00-BE53-46EB-9F99-7FB5090A57FC_2/9YrqPCSnHMdBjTsqCyqC7UbJ171Ap9EGA72UZpILKtUz/IMG_7302%20.jpeg)
+
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/27D10E5A-0EA2-47FC-B7C9-07E9960080FE_2/rjTz2y5bvYdGJFhD85c7EpJ4XxzJYQAPyTiSJYHBZToz/IMG_7303%20.jpeg)
 
 翻炒均匀，大概炒半分钟后，加入半勺盐（约 1 克）： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/81C86C8E-96F8-44CE-AB9A-50A1CB08E3E0_2/NxWEwH7gRrKIifMJfGS2wFhyvn4iYI9RO5YQIeZ09ZAz/IMG_7305.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/4C5055FA-4C55-486A-A5F2-0056322E160C_2/MeF9rtQEtHwTxpxl7heBYHyFFOf2zt6sYweLXz1jcvgz/IMG_7305%20.jpeg)
 
 继续翻炒均匀，直到西红柿变软到皮都掉，西红柿肉变烂，然后加入豆角： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/9CD951AD-DB3E-437F-9818-D509B224C0E7_2/WxqJA8p3BiITIvTHGqO1EPJlrf9Xn2qFNgttnHyApZMz/IMG_7309.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/FE8C37AD-430A-47EA-AE39-08E2BB99CA72_2/70aGZwMxr2zQrJeuuNx0c1upHhc0KyPfxSPxkKt4Tewz/IMG_7309%20.jpeg)
 
 翻炒均匀，至豆角都沾上锅内的食材的味道后，加入老抽上色： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/B813A2D6-F322-4278-9E17-0EABB603BC29_2/KkCR3DRjiaI9p8LAsTWcuGXqL7uwbNyHtFsArQb7xoQz/IMG_7311.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/36EF7CE4-78E3-4022-9E88-E553909129B3_2/rAXkSrVXdTrzZVsBQOPfeo4kyRJk8pxKj64wGgzxEq0z/IMG_7311%20.jpeg)
 
 此时再加入半勺盐（约 1 克）： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/D4D09E57-21BB-45F8-88AC-2FDACEED6353_2/feOoiWm2zU1LOpYL5wn92oE8aqYCIMAOFV7WDwHb3B8z/IMG_7313.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/4E6D7E77-6130-4024-AFEC-F159F6D3711D_2/UJNmadvroyO2AhnIHyvjxYXIymROEw6bm0zTB8mm8VYz/IMG_7313%20.jpeg)
 
 翻炒均匀，然后加入食用水至刚好没过食材： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/2ABBAD6C-26B6-4242-BC00-705A19FC53A4_2/phSj50T40yeyxUb5ferseLAKGsbfzPX62RVRzy0lrxgz/IMG_7318.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/93846377-B686-4184-800B-79380961CDEF_2/MghBC568utJXQhdcdszQrvQgRNleKDT9U3OTouQ0ySQz/IMG_7318%20.jpeg)
 
 之后盖盖，小火煮 20 分钟： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/FBD5F922-843B-473E-B8D0-D147DB07844D_2/6MBlbw14qTNcw4HvUom1MxcIwJMLKQmfDv6S8xBkmA4z/IMG_7320.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/5C254E48-FDB8-4E37-A76F-E24C66FAE219_2/hyrAXnJW4xHgjYQgu6yoA1Ul9gKktuwB2pGw89YpfS8z/IMG_7320%20.jpeg)
 
 干完以上活儿之后，随手擦干净灶台： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/94F32A8C-3088-4120-9BAA-CB4E039E3C48_2/ifpCyuc2xXLLcdFyyIOFJ4EKxQR7TPha3xZyOt9WRxkz/IMG_7321.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/CCE94AE1-46AD-4A34-B17B-190CC53D9BFD_2/P0MqwdaEgjAG5DPkAnjGfVXvG94byychF9T0231xFioz/IMG_7321%20.jpeg)
 
 时间到了差不多的时候，看食材基本熟了后，尝一尝咸淡，没问题之后，保证水刚好处在食材下面一点（不能过少，也不能没过食材）： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/64E15FBF-F262-4348-93C7-F81E3A496A6F_2/FbsmZZRLnEko0S65LRI9k81WBXMYMeWKBWA9yx4MWU0z/IMG_7322.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/1398C533-B68D-4DE5-B7E2-EA36EFF99EB4_2/rFHY5YknIqXShyIdCxy2oITXaeDrLRmvklA2gDSuyW4z/IMG_7322%20.jpeg)
 
 然后放入面条，摊均匀，注意不要把面条接触到锅，不然锅的温度比较高，而且没有水，比较容易糊： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/6AE15D60-6D2D-41AB-9601-667C7DD6A823_2/f4paqaj1t5EFxCpWrfOjTuq8KswIXh9OSArrPVALTFEz/IMG_7323.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/53397255-EC27-42B3-BB32-1A105F812223_2/xiYYBHpCIzemfP866CGvTv7oFIqrsQBHtYhIMmlbFzgz/IMG_7323%20.jpeg)
 
 盖上盖子，继续煮个5分钟： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/0B5BB4C3-B3D4-46D1-89CE-7745D1593F01_2/ExCDGSme9RgtO7h4JPzgqZD25SIyU5NlmyIriIfkxGoz/IMG_7324.heic)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/F2717211-4D4A-495C-BF7B-DE050B8D72F0_2/oxLczxPRcEFMnTS1E4Cta8xYZof0nRglyC7AEZCDfi4z/IMG_7324%20.jpeg)
 
 在此过程中，不要走开，随时观察水量的多少（如果对水蒸发的速度没有把握的话），水不要烧干，要还有一点水，这样可以适当浸润面条，然后将食材和面条搅拌均匀，就可以出国了。
 
 ## 成品欣赏
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/4F3F3771-5B7D-4AAE-AA39-AFAAEE9B389A_2/k9Utc5irIM2fVfcEn78SV1LojkYM46bIoSefLsxJKpQz/IMG_7446.jpeg)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/28922F76-12C5-45B7-B854-372736086AC7/0E24E86D-52ED-4770-BFD9-3D077E4D183F_2/Rre1IIaszHqR4VflK8lsoMF78AfcTEa8RanNq7bqfuoz/IMG_7446%20.jpeg)
 
 ## 关键点
 

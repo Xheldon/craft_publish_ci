@@ -283,13 +283,23 @@ const modifyContent = (html, url) => {
         if (h.querySelectorAll('img').length) {
             h.remove();
         }
-        if (h.tagName === 'P' && h.childElementCount === 1 && h.firstElementChild && h.firstElementChild.tagName === 'BR') {
-            if (h.parentElement && h.parentElement.childElementCount === 1) {
-                h.parentElement.remove();
-            } else {
-                h.remove();
+        if (h.tagName === 'P') {
+            if (h.childElementCount === 1 && h.firstElementChild && h.firstElementChild.tagName === 'BR') {
+                if (h.parentElement && h.parentElement.childElementCount === 1) {
+                    h.parentElement.remove();
+                } else {
+                    h.remove();
+                }
+            }
+            if (h.childElementCount === 0) {
+                if (h.parentElement && h.parentElement.childElementCount === 1) {
+                    h.parentElement.remove();
+                } else {
+                    h.remove();
+                }
             }
         }
+        
     });
     return `<p><span style="color: #f04848; font-size: 18px;">本文仅为自动化部署过程中生成的摘要使用微信公众号接口发布，过滤了全部的图片内容，因此想获得更好的阅读体验请点击底部的「<b>阅读原文</b>」了解更多~</span></p> <p><img src="${url}" style="margin-bottom: 30px;" /></p>${dom.window.document.body.innerHTML} <hr><p>👇🏻👇🏻👇🏻 点击下方「查看原文」获得完整内容</p>`;
 };

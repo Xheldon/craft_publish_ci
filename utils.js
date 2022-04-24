@@ -282,6 +282,7 @@ const modifyContent = (html, url) => {
         }
         if (h.querySelectorAll('img').length) {
             h.remove();
+            return;
         }
         if (h.tagName === 'P') {
             if (h.childElementCount === 1 && h.firstElementChild && h.firstElementChild.tagName === 'BR') {
@@ -299,9 +300,11 @@ const modifyContent = (html, url) => {
             }
         }
         if (h.tagName === 'OL') {
+            console.log('遇到 OL');
             h.style.listStyleType = 'decimal';
         }
         if (h.tagName === 'UL') {
+            console.log('遇到 UL');
             h.style.listStyleType = 'disc';
         }
     });

@@ -291,7 +291,7 @@ const modifyContent = (html, url) => {
                     h.remove();
                 }
             }
-            if (h.childElementCount === 0) {
+            if (h.textContent === '') {
                 if (h.parentElement && h.parentElement.childElementCount === 1) {
                     h.parentElement.remove();
                 } else {

@@ -17,15 +17,17 @@ title: 我的家庭观影之路
 header-img: https://images.unsplash.com/photo-1440404653325-ab127d49abc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDIyNzR8MHwxfHNlYXJjaHw1fHxXYXRjaGluZyUyME1vdmllfGVufDB8fHx8MTY1MDUwNDcwMw&ixlib=rb-1.2.1&q=80&w=1080
 header-img-credit: Noom Peerapong / Unsplash
 header-img-credit-href: https://unsplash.com/@imnoom?utm_source=xheldon_blog&utm_medium=referral
+sha: dce06c615f426379089ffaf5ec272f0702e01be0
+lastUpdateTime: 2022-04-24 09:38:39 +0800
 ---
 
 ## 前言
 
 看电视是家里必不可少的娱乐活动，但是如何舒服的看自己想看的内容却不是一件简单的事，有时候甚至有钱都买不来舒心，于是此处记录一下有关家庭观影的折腾记录，一来可以给大家一个思路，二来可以帮助大家提高生活质量。
 
-## 我基本情况
+## 我的基本情况
 
-这里先介绍一下我的基本情况，如果情况和你相符的话可以继续看下去，如果与你的需求不甚吻合，可以继续看下去做个参考。
+这里先介绍一下我的基本情况，如果情况和你相符的话可以继续看下去；如果与你的需求不甚吻合，也可以继续看下去做个参考。
 
 ### 设备
 
@@ -145,7 +147,7 @@ header-img-credit-href: https://unsplash.com/@imnoom?utm_source=xheldon_blog&utm
 
 #### 配置 Samba 共享
 
-> 此处建议先配置路由器的[ Samba 共享](https://baike.baidu.com/item/samba/455025)（也即 SMB 协议），这样的话就不用使用 SSH 终端登陆路由器来通过命令行修改配置文件了，对小白比较友好，因此将这一步放到首位。
+> 此处先配置路由器的[ Samba 共享](https://baike.baidu.com/item/samba/455025)（也即 SMB 协议）的原因是，这样的话就不用使用 SSH 终端登陆路由器来通过命令行修改配置文件了，对小白比较友好，因此将这一步放到首位。
 
 浏览器进入到路由器配置页面，然后进入 `网络存储-网络共享` ， 进行如下填写，其中主机名是显示在 Finder 中的名字，描述和工作组默认就可以，可以看到默认状态下 `自动共享` 选项是打开的，也就是我上一节说的这一步其实不是很需要。但是如果默认自动共享的话，是共享的根目录，会将 `/mnt/sda1` 也显示出来，我这个强迫症一定要改掉，于是配置下方的 `共享目录` 即可： 
 
@@ -183,9 +185,9 @@ header-img-credit-href: https://unsplash.com/@imnoom?utm_source=xheldon_blog&utm
 
 ![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/0E418850-554B-40BB-A623-D7B8520BB8DC/5C47B593-D0D6-4B0D-BFAE-3B2CF21FAB32_2/FlwOFmkffDeJngwjfBRALe5fqTAFrKdtfISrWgvfs7wz/Image)
 
-至此就安装完成了，你有什么磁力链接或者 torrent 种子都可以进行下载。
+至此就安装完成了，你有什么网上搜到的磁力链接或者 torrent 种子都可以进行下载。
 
-> 如果你还是不想到处找种子，问题不大，继续看下面
+> 如果你还是不想到处找种子，或者说网上搜到的磁力链接都是死链，无法下载，那么继续看下面。
 
 #### 设置 qBittorrent 的 Jackett 搜索插件
 
@@ -227,7 +229,7 @@ docker run -d \
   lscr.io/linuxserver/jackett
 ```
 
-比如上面的配置，我的本地硬盘路径就是 `~/Code/Docker/config` 和 `~/Code/Docker/downloads` 。
+比如上面的配置，我的本地硬盘路径就是 `~/Code/Docker/config` 和 `~/Code/Docker/downloads` 。这个配置简单解释一下就是，映射本机端口 9117 到 Docker 容器的 9117 端口，启用自动更新，禁止重启停止除非已经意外停止。
 
 之后就可以在 Docker 中看到这个服务了（默认直接启动了）： 
 

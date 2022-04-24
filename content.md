@@ -13,8 +13,8 @@ title: 【泡脚时间】第二期：简单粗暴
 header-img: https://images.unsplash.com/photo-1586779395464-c490b210d5c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDIyNzR8MHwxfHNlYXJjaHwxfHx3fGVufDB8fHx8MTY0NjA2NjM2NQ&ixlib=rb-1.2.1&q=80&w=1080
 header-img-credit: Miltiadis Fragkidis / Unsplash
 header-img-credit-href: https://unsplash.com/@_miltiadis_?utm_source=xheldon_blog&utm_medium=referral
-sha: cf85753f6bb0692ce7a1c4aa2247573edb8efa4e
-lastUpdateTime: 2022-04-24 12:26:53 +0800
+sha: b4895c149b4ae09363ed8a72fc8e2931e96ee4d6
+lastUpdateTime: 2022-04-24 12:34:56 +0800
 ---
 
 > 因为工作的原因，爱人每天会比我早出门一个小时，而下班会比我早到家两个小时。因此除了吃早饭的短暂时间外，在工作日的时候，我们两人交流的时间很少。因此，所谓「泡脚时间」即是每天下班回来后，给爱人烧水泡脚的时候，两人交谈的短暂时间，话题无所不包，语言也大部分是口语没有逻辑可言。

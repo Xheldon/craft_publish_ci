@@ -266,7 +266,7 @@ const addDraftToWechat = (article) => {
 
 const modifyContent = (html, url) => {
     const dom = new JSDOM(html);
-    [...dom.window.document.querySelectorAll('h1, h2, h3, h4, h5, h6, h7, p, li')].forEach(h => {
+    [...dom.window.document.querySelectorAll('h1, h2, h3, h4, h5, h6, h7, p, li, ol, ul')].forEach(h => {
         const headingMap = {
             1: 28,
             2: 24,
@@ -298,7 +298,12 @@ const modifyContent = (html, url) => {
                 }
             }
         }
-        
+        if (h.tagName === 'OL') {
+            h.style.listStyleType = 'decimal';
+        }
+        if (h.tagName === 'UL') {
+            h.style.listStyleType = 'disc';
+        }
     });
     const result = `<p><span style="color: #f04848; font-size: 18px;">本文仅为自动化部署过程中生成的摘要使用微信公众号接口发布，过滤了全部的图片内容，因此想获得更好的阅读体验请点击底部的「<b>阅读原文</b>」了解更多~</span></p> <p><img src="${url}" style="margin-bottom: 30px;" /></p>${dom.window.document.body.innerHTML} <hr><p>👇🏻👇🏻👇🏻 点击下方「查看原文」获得完整内容</p>`;
     console.log('-------result:', result);

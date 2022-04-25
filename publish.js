@@ -112,12 +112,14 @@ module.exports = async ({context}) => {
                                     return sharp(res.data)
                                             .withMetadata({
                                                 exif: {
-                                                IFD0: {
-                                                    Copyright: 'image from xheldon.com'
-                                                }
+                                                    IFD0: {
+                                                        Copyright: 'image from xheldon.com'
+                                                    }
                                                 }
                                             })
-                                            .png()
+                                            .png({
+                                                compressionLevel: 9
+                                            })
                                             .toBuffer({resolveWithObject: true})
                                             .then(({data, info}) => {
                                                 return {

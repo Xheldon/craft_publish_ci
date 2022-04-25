@@ -29,7 +29,9 @@ const sendImgToWechat = (thumbUrl) => {
     }).then(res => {
         if (res.status === 200) {
             return Sharp(res.data)
-                .png()
+                .png({
+                    compressionLevel: 9
+                })
                 .toBuffer({resolveWithObject: true})
                 .then(({data, info}) => {
                     return axios({

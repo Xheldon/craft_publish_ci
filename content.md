@@ -17,8 +17,8 @@ title: 我的家庭观影之路
 header-img: https://images.unsplash.com/photo-1440404653325-ab127d49abc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDIyNzR8MHwxfHNlYXJjaHw1fHxXYXRjaGluZyUyME1vdmllfGVufDB8fHx8MTY1MDUwNDcwMw&ixlib=rb-1.2.1&q=80&w=1080
 header-img-credit: Noom Peerapong / Unsplash
 header-img-credit-href: https://unsplash.com/@imnoom?utm_source=xheldon_blog&utm_medium=referral
-sha: 28fa9d282b7004653a99a90defad4c76e46debac
-lastUpdateTime: 2022-04-25 12:27:40 +0800
+sha: 66fa313fa5269fa85fcf4941b594ff9eb9b17622
+lastUpdateTime: 2022-04-25 15:23:44 +0800
 ---
 
 ## 前言
@@ -121,7 +121,7 @@ lastUpdateTime: 2022-04-25 12:27:40 +0800
 
 首页视图： 
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/0E418850-554B-40BB-A623-D7B8520BB8DC/939E8E46-8850-4713-B536-1A7625121CCC_2/D5qatayYcjjTivSkPctddyJy4upxolYEDtH9S3IqugQz/Image)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/0E418850-554B-40BB-A623-D7B8520BB8DC/B13D4C3E-75CE-4B33-9895-3C92CAD2F230_2/rtl88bWQyVLtJJlBJYCWyx4WP4tJxILuCADnHyFRXjgz/shouye.png)
 
 其他 Infuse 的使用可以自己发掘一下。
 
@@ -293,7 +293,7 @@ Categories 顾名思义就是网站资源类型，其中 XXX 是 你懂的，不
 
 ![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/0E418850-554B-40BB-A623-D7B8520BB8DC/DA2FBBEA-E138-4BD0-A330-4F3C17A98AFD_2/7SLEVbSViLNUU5Sk61Motml7pkpyMAlO5J99pf3bfEsz/Image)
 
-![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/0E418850-554B-40BB-A623-D7B8520BB8DC/6CE14BDE-5EE6-4AFB-90BA-45F473B27B98_2/vyU2C4eDIOoXZmbjQ9tA0cnnZOScEXH9Q6islQONTQ4z/Image)
+![Image](https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/0E418850-554B-40BB-A623-D7B8520BB8DC/BA70F951-FC97-4721-8749-08AF28A1ED61_2/C3WO6xXss3hgzHYjsn7P6ENBC58xkeYJlfGFiHxKWxsz/bigImage.png)
 
 ## 测试
 

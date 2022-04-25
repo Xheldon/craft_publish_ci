@@ -62,9 +62,9 @@ module.exports = async ({context}) => {
                     //   or https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/5B15834E-4C1F-452D-82A5-15D3EEE6447E/42A6EFC4-B89F-47CB-A2EE-573C50A3AAB1_2/o5KJQssEMpH9yDZB3tAh7cdHf3aB7xuihAlTBqXi7q8z/Image.png
                     //  Web：https://res.craft.do/user/full/747e0824-8866-cf67-b3ae-2e207380d1f9/doc/5B15834E-4C1F-452D-82A5-15D3EEE6447E/1ac70d37-5757-4182-8dbf-13672b3a454a
                     //  unsplash: https://images.unsplash.com/photo-1590846083693-f23fdede3a7e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDIyNzR8MHwxfHNlYXJjaHw0fHxrfGVufDB8fHx8MTY0NjEzODk3Mg&ixlib=rb-1.2.1&q=85
-                    name = `img/in-post/${cosPath}/${arr[6]}.jpg`;
+                    name = `img/in-post/${cosPath}/${arr[6]}.png`;
                 } else {
-                    name = `img/in-post/${cosPath}/${arr[1]}.jpg`;
+                    name = `img/in-post/${cosPath}/${arr[1]}.png`;
                 }
                 console.log('------name', name);
                 docImgUrlKeyMap.push({

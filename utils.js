@@ -29,9 +29,7 @@ const sendImgToWechat = (thumbUrl) => {
     }).then(res => {
         if (res.status === 200) {
             return Sharp(res.data)
-                .jpeg({
-                    mozjpeg: true
-                })
+                .png()
                 .toBuffer({resolveWithObject: true})
                 .then(({data, info}) => {
                     return axios({
@@ -41,8 +39,8 @@ const sendImgToWechat = (thumbUrl) => {
                             ...wechatSignature(),
                             data: data.toString('binary'),
                             options: {
-                                filename: 'xheldon.jpeg',
-                                contentType: 'image/jpeg',
+                                filename: 'xheldon.png',
+                                contentType: 'image/png',
                                 filelength: data.length,
                             }
                         }

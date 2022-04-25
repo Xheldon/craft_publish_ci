@@ -55,12 +55,12 @@ module.exports = async ({context}) => {
                 //  详见我在官方论坛提的问题：https://forum.developer.craft.do/t/what-the-image-unique-id/371
                 let arr = new URL(docImgUrl).pathname.split('/');
                 // Note: docImgUrl 形如 img/in-post/qing-zheng-lu-yu/xxxxx_Image.png;
-                // Note: 所有图片，都转换成 jpg，免得麻烦
+                // Note: 所有图片，都转换成 png，免得麻烦
                 let name = '';
                 if (arr.length > 4) {
-                    name = `img/in-post/${cosPath}/${arr[6]}.jpeg`;
+                    name = `img/in-post/${cosPath}/${arr[6]}.png`;
                 } else {
-                    name = `img/in-post/${cosPath}/${arr[1]}.jpeg`;
+                    name = `img/in-post/${cosPath}/${arr[1]}.png`;
                 }
                 docImgUrlKeyMap.push({
                     name,
@@ -108,7 +108,7 @@ module.exports = async ({context}) => {
                             }).then(res => {
                                 if (res.status === 200) {
                                     console.log(`---获取第 ${k + 1} 个远端图片列表成功：${imgUrl.url}`);
-                                    // Note: 将图片都转成 jpg 格式，然后再返回
+                                    // Note: 将图片都转成 png 格式，然后再返回
                                     return sharp(res.data)
                                             .withMetadata({
                                                 exif: {
@@ -117,10 +117,7 @@ module.exports = async ({context}) => {
                                                 }
                                                 }
                                             })
-                                            .jpeg({
-                                                quality: 50,
-                                                mozjpeg: true,
-                                            })
+                                            .png()
                                             .toBuffer({resolveWithObject: true})
                                             .then(({data, info}) => {
                                                 return {

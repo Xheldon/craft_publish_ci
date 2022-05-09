@@ -82,9 +82,9 @@ const pushToGithub = ({
         sha = shaMatch[1].trim();
     }
     // Note: 如果是 single pages，则删除 meta 信息后再上传
-    let realContent = content;
+    let finalContent = content;
     if (path.includes('/single-pages/')) {
-        realContent = realContent.match(/^---\n[\s\S]*---\n([\s\S]*)/)[1];
+        finalContent = finalContent.match(/^---\n[\s\S]*---\n([\s\S]*)/)[1];
     }
     const config = {
         owner,
@@ -93,7 +93,7 @@ const pushToGithub = ({
         path,
         message: git_message,
         ...(sha ? {sha} : {}),
-        content: (new Buffer.from(realContent)).toString('base64'),
+        content: (new Buffer.from(finalContent)).toString('base64'),
     };
     octokit.rest.repos.createOrUpdateFileContents(config).then(data => {
         console.log('~~~~~~~~~~~~~~~~~更新成功:', data.status);

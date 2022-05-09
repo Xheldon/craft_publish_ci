@@ -123,7 +123,7 @@ const pushToGithub = ({
         return;
     }
     if (force) {
-        console.log('---强制推送微信公众号);
+        console.log('---强制推送微信公众号');
     }
     const headerImgUrl = content.match(/^header\-img\:(.*)/m);
     const categories = content.match(/^categories\:(.*)/m)[1].trim();

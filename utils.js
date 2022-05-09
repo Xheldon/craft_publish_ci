@@ -81,6 +81,11 @@ const pushToGithub = ({
     if (shaMatch) {
         sha = shaMatch[1].trim();
     }
+    // Note: 如果是 single pages，则删除 meta 信息后再上传
+    let realContent = content;
+    if (path.includes('/single-pages/')) {
+        realContent = realContent.match(/^---\n[\s\S]*---\n([\s\S]*)/)[1];
+    }
     const config = {
         owner,
         repo,
@@ -88,7 +93,7 @@ const pushToGithub = ({
         path,
         message: git_message,
         ...(sha ? {sha} : {}),
-        content: (new Buffer.from(content)).toString('base64'),
+        content: (new Buffer.from(realContent)).toString('base64'),
     };
     octokit.rest.repos.createOrUpdateFileContents(config).then(data => {
         console.log('~~~~~~~~~~~~~~~~~更新成功:', data.status);
@@ -114,7 +119,11 @@ const pushToGithub = ({
     const force = git_message.match(/FORCE_TO_WECHAT/g);
     if (!force && shouldContinue && shouldContinue[1] && shouldContinue[1].trim()) {
         // Note: 本次文章已经发布过，因此不再继续
+        console.log('---文本已经发发布过，因此不再继续发布');
         return;
+    }
+    if (force) {
+        console.log('---强制推送微信公众号);
     }
     const headerImgUrl = content.match(/^header\-img\:(.*)/m);
     const categories = content.match(/^categories\:(.*)/m)[1].trim();
